@@ -1,0 +1,62 @@
+a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#first:link, #first:visited {
+    color: orange;
+    background-color: lightgreen;
+}
+
+#first:hover {
+    color: red;
+    background-color: blue;
+}
+#first:active {
+    color: white;
+    background-color: pink;
+}
+
+
+#second:link, #second:visited {
+    color: yellow;
+    background-color: gray;
+}
+#second:hover {
+    color: red;
+    background-color: blue;
+}
+#second:active {
+    color: white;
+    background-color: pink;
+}
+
+
+#third:link, #third:visited {
+    color: white;
+    background-color: black;
+}
+#third:hover {
+    color: red;
+    background-color: blue;
+}
+#third:active {
+    color: white;
+    background-color: pink;
+}
+
+/*lab5 task2*/
+h1 {
+   color: green;
+   background-color: lightyellow;
+   padding: 10px
+}
+
+/* lab 5 task 3 */
+h1 {
+    color: white;
+    background-color: #4a9d96;
+    padding: 10px;
+}
