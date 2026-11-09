@@ -1,0 +1,8 @@
+<h1>Task 3 - Oldest Book</h1>
+
+{% for publisher in publishers %}
+    <p>Publisher: {{ publisher.name }}</p>
+    <p>Oldest Book: {{ publisher.oldest_title|default:"No books" }}</p>
+    <p>Date: {{ publisher.oldest_date|default:"N/A" }}</p>
+    <hr>
+{% endfor %}

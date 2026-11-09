@@ -1,0 +1,12 @@
+<h1>Task 5 - Highly Rated Books</h1>
+
+{% for publisher in publishers %}
+    <h3>{{ publisher.name }}</h3>
+    <p>Highly Rated Books: {{ publisher.highly_rated_count }}</p>
+    {% for book in publisher.book_set.all %}
+        {% if book.rating >= 4 %}
+            <p>{{ book.title }} - Quantity: {{ book.quantity }}</p>
+        {% endif %}
+    {% endfor %}
+    <hr>
+{% endfor %}

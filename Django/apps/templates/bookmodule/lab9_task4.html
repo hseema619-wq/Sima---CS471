@@ -1,0 +1,9 @@
+<h1>Task 4 - Book Prices</h1>
+
+{% for publisher in publishers %}
+    <p>Publisher: {{ publisher.name }}</p>
+    <p>Average: {{ publisher.average_price|default:"N/A" }}</p>
+    <p>Minimum: {{ publisher.minimum_price|default:"N/A" }}</p>
+    <p>Maximum: {{ publisher.maximum_price|default:"N/A" }}</p>
+    <hr>
+{% endfor %}

@@ -1,0 +1,10 @@
+<h1>Students in Each City</h1>
+
+{% for address in addresses %}
+    <p>
+        City: {{ address.city }}
+        - Number of Students: {{ address.student_count }}
+    </p>
+{% empty %}
+    <p>No students found.</p>
+{% endfor %}

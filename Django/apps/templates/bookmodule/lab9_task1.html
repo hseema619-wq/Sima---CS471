@@ -1,0 +1,9 @@
+<h1>Task 1 - Book Availability</h1>
+
+{% for book in books %}
+    <p>{{ book.title }} - Quantity: {{ book.quantity }}</p>
+    <p>Availability: {{ book.percentage|floatformat:2 }}%</p>
+    <hr>
+{% empty %}
+    <p>No books found.</p>
+{% endfor %}

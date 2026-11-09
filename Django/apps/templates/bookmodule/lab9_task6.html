@@ -1,0 +1,7 @@
+<h1>Task 6 - Filtered Book Count</h1>
+
+{% for publisher in publishers %}
+    <p>Publisher: {{ publisher.name }}</p>
+    <p>Number of Books: {{ publisher.book_count }}</p>
+    <hr>
+{% endfor %}
